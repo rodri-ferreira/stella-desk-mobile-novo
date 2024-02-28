@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0PX;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-mobile {
+    display: none;
+}
+
+.header-div {
+    max-width: 1360px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.header a img {
+    width: 190px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.menu .menu-ul {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 5px;
+}
+
+.menu .menu-ul li a {
+    color: #000000;
+    font-size: 10px;
+}
+
+.menu .menu-ul li a:hover {
+    font-weight: 800;
+}
+
+.menu-right {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-right-individual {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    gap: 10px
+}
+
+.span-pesquisa {
+    width: 80px;
+    padding-top: 5px;
+}
+
+.secao-historia {
+    width: 100%;
+    height: 300px;
+    background-image: url("img/Retângulo\ 71.jpg");
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    color: #ffffff;
+}
+
+.secao-desde {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.secao-historia-h2 {
+    font-size: 40px;
+    font-family: 'Lato';
+    font-weight: 600;
+}
+
+.secao-stella-gravina { 
+    position: relative;
+    height: 900px;
+    background-image: url("img/Capturar\ \(1\).png");
+    background-size: cover;
+    background-position: center;
+    
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.secao-stella-gravina-mobile {
+    display: none;
+}
+
+.div-stella-branco {
+    height: 900px;
+    position: relative;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+.div-stella-texto {
+    margin-top: 170px;
+    margin-left: 460px;
+}
+
+.div-stella-texto h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.div-stella-texto p {
+    color: #414141;
+    width: 350px;
+    padding-left: 90px;
+    margin-bottom: 130px;
+    font-weight: 550;
+    font-size: 14px;
+    text-align: justify;
+    text-transform: initial;
+}
+
+.div-stella-texto h3 {
+    color: #000;
+    padding-left: 90px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.circulo-stella {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #000;
+    border-radius: 100px;
+    position: absolute;
+    top: 300px;
+    z-index: 100000;
+}
+
+.linha-stella {
+    height: 1400px;
+    border: 1px solid rgb(0, 0, 0);
+    position: absolute;
+    top: 260px;
+    z-index: 52202;
+}
+
+.secao-video-background {
+    position: relative;
+    width: 100%;
+}
+
+.div-video {
+    position: absolute;
+}
+
+.video {
+    width: 100%;
+    position: relative;
+}
+
+.secao-video-background-texto {
+    position: absolute;
+    width: 400px;
+    font-size: 16px;
+    font-weight: bold;  
+    transition: 0.5s;
+    bottom: 115px;
+    left: 24%;
+    color: #000;
+}
+
+.secao-video-background-texto h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.secao-video-background-texto p {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: 500;
+    text-align: justify;
+    width: 350px;
+}
+
+.div-video {
+    position: relative;
+}
+
+.secao-anel-marca {
+    position: relative;
+    background-color: #ffffff;
+}
+
+.secao-anel-marca {
+    background-image: url("img/1800x869---Ib.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    padding-top: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+.secao-anel-marca-texto {
+    position: relative;
+    width: 370px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: bold;  
+    bottom: 230px;
+    left: 110px;
+    transition: 0.5s;
+    text-align: justify;
+}
+
+.secao-anel-marca-imageHover{
+    position: relative;
+    left: -40px;
+    transition: 0.5s;
+}
+
+.secao-anel-marca-imageHover-mobile {
+    display: none;
+}
+
+.secao-anel-marca:hover .secao-anel-marca-texto {
+    left: 0px;
+}
+
+.secao-anel-marca:hover .secao-anel-marca-imageHover{
+    left: 200px;
+}
+
+.img-jornal {
+    position: absolute;
+    width: 650px;
+    top: 1100px;
+    transform: rotate(-10deg);
+    z-index: 1000000;
+    display: block;
+    filter:drop-shadow(28px 28px 22px  #c9c9c9);
+    transition: 0.5s;
+}
+
+.secao-geracoes {
+    position: relative;
+    padding: 50px 0 250px 0;
+}
+
+.conteudo-geracoes {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.conteudo-geracoes h2 {
+    font-size: 50px;
+}
+
+.secao-geracoes p{
+    color: #000;
+    padding-top: 20px;
+    font-weight: bold;
+    max-width: 800px;
+    font-weight: 800;
+    width: 100%;
+    font-size: 13px;
+    margin: 0 auto;
+}
+
+.imgs-efeito {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 190px;
+    height: 820px;
+    right: 60px;  
+}
+
+.imgs {
+    position: absolute;  
+    transition: 0.5s ease-out;
+}
+
+.imgs-efeito:hover .img-efeito-1{
+    transform: translate(40px, -40px);
+    transition: 0.5s ease-out;
+}
+
+.imgs-efeito:hover .img-efeito-2{
+    transform: translate(-50px, -50px);
+    transition: 0.5s ease-out;
+}
+
+.imgs-efeito:hover .img-efeito-3{
+    transform: translate(20px);
+    transition: 0.5s ease-out;
+    
+}
+
+.imgs-efeito:hover .img-efeito-4{
+    transform: translate(20px, -20px);
+    transform: rotate(20deg);
+    transition: 0.5s ease-out;
+}
+
+.img-efeito-1 {
+    width: 340px;
+    height: 340px;
+    left: 0;
+    z-index: 2000;
+}
+.img-efeito-2 {
+    width: 360px;
+    height: 360px;
+    right: 0;
+}
+
+.img-efeito-3 {
+    width: 780px;
+    height: 780px;
+    bottom: 0;
+    top: 180px;
+    z-index: 0;
+}
+
+.img-efeito-4 {
+    width: 624px;
+    height: 624px;
+    z-index: 0;
+    top: 130px;
+}
+
+.secao-vinculos {
+    background-color: #000;
+    height: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.secao-vinculos-mobile {
+    display: none;
+}
+
+.secao-vinculos-sub {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+}
+
+.col1, .col3 {
+    position: relative;
+}
+
+.col1 {
+    position: relative;
+    left: 120px;
+    top: 90px;
+}
+
+.col1 img {
+    width: 90%;
+}
+
+.col1 h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.col1 p, .col3 p {
+    font-size: 13px;
+    text-transform: uppercase;
+    max-width: 350px;
+    color: #ABABAB;
+}
+
+.col1 p {
+    margin-bottom: 40px;
+}
+
+.col2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.img-principal-anel-vinculos {
+    position: relative;
+    width: 100%;
+    right: 80px;
+    z-index: 0;
+}
+
+.img-pedaco-anel-desk {
+    position: relative;
+    right: 180px;
+    top: 150px;
+    max-width: 40px;
+
+}
+
+.vinculos {
+    color: #fff;
+}
+
+.vinculos, p, h3 {
+    color: #fff;
+}
+
+.col3 {
+    position: relative;
+    top: 70px;
+    right: 130px;
+}
+
+.col3 img {
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.col3 h3 {
+    margin: 30px 0 30px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #E0E0E0;
+}
+
+.celebracao-mobile {
+    display: none;
+}
+
+.celebracao {
+    background-image: url("img/celebracao\(1\).PNG");
+    height: 830px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.celebracao h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 30px;
+} 
+
+.celebracao p {
+    max-width: 930px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.aneis-noivado {
+    background-image: url("img/2021_03_16-StellaDiamond15734\ copiar.jpg");
+    height: 560px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 80px;
+}
+
+.aneis-noivado-mobile {
+    display: none;
+}
+
+.noivado-texto {
+    position: relative;
+    left: 130px;
+    z-index: 20;
+    transition: 0.5s;  
+}
+
+.noivado-texto h2 {
+    width: 450px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.noivado-texto-p {
+    width: 300px;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-top: 30px;
+    position: relative;
+    left: 80px;
+    transition: 0.5s; 
+    text-align: justify;
+}
+
+.noivado-img {
+    position: relative;
+    top: 80px;
+    left: -10px;
+    width: 950px;
+    transition: 0.5s;
+}
+
+.aneis-noivado:hover .noivado-img {
+    left: 200px;
+    transition: 0.5s;
+    transform: scale(1.08);
+}
+
+.aneis-noivado:hover .noivado-texto{
+    left: 150px;
+    transition: 0.5s;   
+}
+
+.aneis-noivado:hover .noivado-texto-p {
+    left: 0;
+    transition: 0.5s; 
+}
+
+
+.atendimento-tecnico {
+    height: 940px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.anel-img{
+    margin-top: -100px;
+    transition: 0.3s;
+}
+
+.anel-img:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.atendimento-tecnico h2{
+    margin-top: -30px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.atendimento-tecnico p {
+    color: #000000;    
+    text-transform: uppercase;
+    width: 350px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.links-footer {
+    color: #a8a8a8;
+    padding-bottom: 5px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.footer-links ul .li-header {
+    margin-bottom: 50px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #dcdcdc;
+
+}
+
+.newslleter {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 50px;
+    margin-left: 30px;
+}
+
+.newslleter h4 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #dcdcdc;
+}
+
+.newslleter p {
+    color: #a8a8a8;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.newslleter-input {
+    min-width: 350px;
+    background-color: #000000;
+    outline: none;
+    border: none;
+    border-bottom:1px solid #a8a8a8;
+    color: #fff;
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+
+.newslleter button {
+    width: 290px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hr-newslleter {
+    display: none;
+}
+
+.footer-copy {
+    padding: 0 120px 150px 120px;
+    background-color: #000000;
+}
+
+.img-certificados {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-copy hr {
+    border-color: #a8a8a8; 
+}
+
+.footer-copy p {
+    text-align: center;
+    font-size: 10px;
+    padding-top: 50px;
+    color: #a8a8a8;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+.animacao-aneis-noivado {
+    position: relative;
+    left: 150px;
+    overflow: hidden;
+    transition: 0.5s;
+}
