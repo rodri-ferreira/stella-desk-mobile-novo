@@ -33,6 +33,17 @@
     } 
 }
 
+@media screen and (max-width: 1400px) {
+    .noivado-img {
+        top: 60px;
+        width: 700px;
+    }
+
+    .aneis-noivado {
+        height: 500px;
+    }
+}
+
 
 @media screen and (max-width: 1092px) {
     .html, body {
